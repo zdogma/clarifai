@@ -3,9 +3,8 @@ clarifai
 
 ## Description
 
-## Requirement
-
-## Install
+画像 URL を入力し、その画像のタグを取得して保存する Web アプリケーション。
+![image](https://cloud.githubusercontent.com/assets/1973683/21955055/ded422b2-daa5-11e6-8569-b67f3ddd66a8.png)
 
 ## Contribution
 1. Fork it ( https://github.com/zdogma/clarifai/fork )
