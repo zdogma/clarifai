@@ -1,0 +1,13 @@
+defaults: &defaults
+  clarifai:
+    init_with_app_id: <%= ENV['CLATIFAI_INIT_WITH_APP_ID'] %>
+    app_secret: <%= ENV['CLARIFAI_APP_SECRET'] %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

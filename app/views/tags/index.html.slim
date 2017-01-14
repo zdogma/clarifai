@@ -1,0 +1,16 @@
+h1 Listing tags
+
+table.table
+  thead
+    tr
+      th
+      th
+      th
+
+  tbody
+    - @tags.each do |tag|
+      tr
+        td = tag.content
+        td = link_to '詳細', tag
+
+= link_to 'TOPへ', root_path

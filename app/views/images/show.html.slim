@@ -1,0 +1,10 @@
+p#notice = notice
+
+img src="#{@image.url}" width="500px;"
+
+h2 タグ
+ul
+  - @image.tags.each do |tag|
+    li = tag.content
+
+= link_to '戻る', images_path

@@ -1,0 +1,11 @@
+p#notice = notice
+
+h1 = @tag.content
+
+h2 このタグがついている画像
+
+- @tag.images.each do |image|
+  img src="#{image.url}" width="400px;"
+
+.footer
+  = link_to 'Back', tags_path

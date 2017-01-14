@@ -1,0 +1,29 @@
+h1 Listing images
+
+= link_to '新しい画像を登録する', new_image_path, { class: "btn btn-primary active" }
+br
+br
+
+table.table
+  thead
+    tr
+      th 画像
+      th タグ
+      th
+
+  tbody
+    - @images.each do |image|
+      tr
+        td style="padding: 10px;"
+          img src="#{image.url}" style="max-width: 200px;"
+        td style="max-width: 300px; padding: 10px;"
+          - image.tags.each do |tag|
+            span /
+            = link_to tag.content, tag, { class: "btn btn-success", style: " margin: 3px;" }
+        td style="padding: 10px;"
+          = link_to '詳細', image
+        td style="padding: 10px;"
+          = link_to '削除', image, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+= link_to 'TOPへ', root_path
